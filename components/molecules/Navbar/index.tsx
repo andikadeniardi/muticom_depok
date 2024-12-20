@@ -17,7 +17,7 @@ const Navbar = () => {
               src="/logomutikom.png" // Path gambar logo Anda
               alt="Logo"
               width={85} // Tentukan lebar logo
-              height={10} // Tentukan tinggi logo
+              height={30} // Tentukan tinggi logo
               className="object-contain" // Menjaga proporsi gambar
             />
           </Link>
@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="lg:hidden flex items-center">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-white focus:outline-none"
+            className="text-blue-600 focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -48,9 +48,7 @@ const Navbar = () => {
 
         {/* Navbar Links (For large screens) */}
         <ul
-          className={`lg:flex space-x-8 ${
-            menuOpen ? "block" : "hidden"
-          } lg:block`}
+          className={`hidden lg:flex space-x-8 lg:space-x-8 transition-all duration-300 ease-in-out`}
         >
           <li>
             <Link
@@ -62,7 +60,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/about"
+              href="/tentang"
               className="hover:text-yellow-400 transition duration-300"
             >
               Tentang
@@ -70,7 +68,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/services"
+              href="/pelatihan"
               className="hover:text-yellow-400 transition duration-300"
             >
               Pelatihan
@@ -78,7 +76,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/contact"
+              href="/kontak"
               className="hover:text-yellow-400 transition duration-300"
             >
               Kontak
@@ -86,6 +84,36 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+
+      {/* Dropdown menu on small screens (Hamburger menu opens) */}
+      {menuOpen && (
+        <div className="lg:hidden flex flex-col items-center py-4 bg-white shadow-lg">
+          <Link
+            href="/"
+            className="py-2 text-lg text-blue-600 hover:text-yellow-400"
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            className="py-2 text-lg text-blue-600 hover:text-yellow-400"
+          >
+            Tentang
+          </Link>
+          <Link
+            href="/services"
+            className="py-2 text-lg text-blue-600 hover:text-yellow-400"
+          >
+            Pelatihan
+          </Link>
+          <Link
+            href="/contact"
+            className="py-2 text-lg text-blue-600 hover:text-yellow-400"
+          >
+            Kontak
+          </Link>
+        </div>
+      )}
     </nav>
   );
 };
