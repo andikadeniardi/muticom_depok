@@ -4,6 +4,7 @@ type PaketCardProps = {
   imageUrl: string;
   link: string;
   price?: string; // Membuat price opsional
+  duration?: string; // Add duration here as a required field
 };
 
 const PaketCard: React.FC<PaketCardProps> = ({
@@ -12,25 +13,28 @@ const PaketCard: React.FC<PaketCardProps> = ({
   imageUrl,
   link,
   price,
+  duration, // Add duration to destructure
 }) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
+    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
       <img
         src={imageUrl}
         alt={title}
         className="w-full h-48 object-cover rounded-md mb-4"
       />
-      <h3 className="text-xl font-semibold text-blue-600">{title}</h3>
-      <p className="text-gray-600 mt-2">{description}</p>
+      <h3 className="text-xl font-semibold text-blue-600 mb-2">{title}</h3>
+      <p className="text-gray-600 mb-4">{description}</p>
       {price && (
-        <p className="text-lg text-blue-600 font-semibold mt-4">{price}</p> // Menampilkan harga jika ada
+        <p className="text-lg text-blue-600 font-semibold mb-4">{price}</p>
       )}
-      <div className="flex justify-center mt-4">
+      <p className="text-gray-600 mb-4">Durasi: {duration}</p>{" "}
+      {/* Display duration */}
+      <div className="flex justify-center">
         <a
           href={link}
           className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
         >
-          Pelajari lebih lanjut
+          Ikuti Paket Pelatihan
         </a>
       </div>
     </div>
