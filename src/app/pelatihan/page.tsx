@@ -24,12 +24,12 @@ const PaketPage = () => {
             link="/PaketKomputer"
           />
 
-          {/* Paket Pelatihan Jaringan */}
+          {/* Paket Pelatihan Komputer Satuan  */}
           <PaketCard
-            title="Paket Jaringan"
-            description="Pelatihan paket jaringan ini akan memberikan keterampilan praktis dalam merancang, mengelola, dan mengatasi masalah jaringan komputer, serta memahami konsep dasar seperti TCP/IP, DNS, dan lainnya. Jadi silahkan dipilih sesuai minat."
+            title="Paket Komputer Satuan"
+            description="Materi yang dibahas mencakup dasar-dasar perangkat keras dan perangkat lunak komputer, pengelolaan file, penggunaan aplikasi produktivitas seperti Microsoft Office, serta troubleshooting dasar untuk mengatasi masalah komputer."
             imageUrl="/paket2.jpeg"
-            link="/PaketJaringan"
+            link="/PaketKomputerSatuan"
           />
 
           {/* Paket Pelatihan Bahasa Inggris */}
