@@ -49,6 +49,7 @@ const Home = () => {
             description="Materi yang dibahas mencakup dasar-dasar perangkat keras dan perangkat lunak komputer, pengelolaan file, penggunaan aplikasi produktivitas seperti Microsoft Office, serta troubleshooting dasar untuk mengatasi masalah komputer."
             imageUrl="/paket2.jpeg"
             link="/PaketSatuan"
+
           />
 
           {/* Paket Pelatihan Bahasa Inggris */}
