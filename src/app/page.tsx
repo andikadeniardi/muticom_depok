@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Navbar from "../../components/molecules/Navbar";
 import Footer from "../../components/molecules/Footer";
+import PaketCard from "../../components/molecules/PaketCard";
 
 const Home = () => {
   return (
@@ -30,6 +31,42 @@ const Home = () => {
             />
           </div>
         </section>
+        <h1 className="text-4xl font-bold text-center text-blue-600 mb-8"></h1>
+
+        {/* Section Paket */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Paket Pelatihan Komputer */}
+          <PaketCard
+            title="Paket Komputer"
+            description="Pelatihan paket komputer ini mencakup dasar-dasar penggunaan komputer, pengoperasian perangkat lunak, dan aplikasi produktivitas untuk membantu peserta menguasai keterampilan teknologi komputer dasar."
+            imageUrl="/paket1.jpeg"
+            link="/PaketKomputer"
+          />
+
+          {/* Paket Pelatihan Jaringan */}
+          <PaketCard
+            title="Paket Jaringan"
+            description="Pelatihan paket jaringan ini akan memberikan keterampilan praktis dalam merancang, mengelola, dan mengatasi masalah jaringan komputer, serta memahami konsep dasar seperti TCP/IP, DNS, dan lainnya. Jadi silahkan dipilih sesuai minat."
+            imageUrl="/paket2.jpeg"
+            link="/paket/networking"
+          />
+
+          {/* Paket Pelatihan Bahasa Inggris */}
+          <PaketCard
+            title="Paket Bahasa Inggris"
+            description="Pelatihan ini dirancang untuk meningkatkan kemampuan komunikasi peserta dalam bahasa Inggris, termasuk kemampuan berbicara, mendengarkan, membaca, dan menulis dalam konteks profesional dan sehari-hari."
+            imageUrl="/paket3.jpeg"
+            link="/paket/english-language"
+          />
+
+          {/* Paket Pelatihan Akuntansi/Pajak */}
+          <PaketCard
+            title="Paket Akuntansi/Pajak"
+            description="Pelatihan ini memberikan pemahaman tentang dasar-dasar akuntansi serta keterampilan dalam mengelola kewajiban pajak untuk individu dan perusahaan, termasuk pemahaman pelaporan pajak dan peraturan perpajakan."
+            imageUrl="/paket4.jpeg"
+            link="/paket/accounting-tax"
+          />
+        </div>
       </main>
       <Footer />
     </div>
