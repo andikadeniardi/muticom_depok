@@ -48,7 +48,7 @@ const Home = () => {
             title="Paket Komputer Satuan"
             description="Materi yang dibahas mencakup dasar-dasar perangkat keras dan perangkat lunak komputer, pengelolaan file, penggunaan aplikasi produktivitas seperti Microsoft Office, serta troubleshooting dasar untuk mengatasi masalah komputer."
             imageUrl="/paket2.jpeg"
-            link="/PaketKomputerSatuan"
+            link="/PaketSatuan"
           />
 
           {/* Paket Pelatihan Bahasa Inggris */}
@@ -56,7 +56,7 @@ const Home = () => {
             title="Paket Bahasa Inggris"
             description="Pelatihan ini dirancang untuk meningkatkan kemampuan komunikasi peserta dalam bahasa Inggris, termasuk kemampuan berbicara, mendengarkan, membaca, dan menulis dalam konteks profesional dan sehari-hari."
             imageUrl="/paket3.jpeg"
-            link="/paket/english-language"
+            link="/PaketBahasaInggris"
           />
 
           {/* Paket Pelatihan Akuntansi/Pajak */}
@@ -64,7 +64,7 @@ const Home = () => {
             title="Paket Akuntansi/Pajak"
             description="Pelatihan ini memberikan pemahaman tentang dasar-dasar akuntansi serta keterampilan dalam mengelola kewajiban pajak untuk individu dan perusahaan, termasuk pemahaman pelaporan pajak dan peraturan perpajakan."
             imageUrl="/paket4.jpeg"
-            link="/paket/accounting-tax"
+            link="/PaketAkuntansi"
           />
         </div>
       </main>
