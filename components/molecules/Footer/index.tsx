@@ -13,7 +13,7 @@ const Footer = () => {
           <a href="/pelatihan" className="text-white hover:text-gray-300">
             Pelatihan
           </a>
-          <a href="kontak" className="text-white hover:text-gray-300">
+          <a href="/kontak" className="text-white hover:text-gray-300">
             Kontak
           </a>
         </div>

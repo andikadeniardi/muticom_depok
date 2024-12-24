@@ -95,19 +95,19 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="/about"
+            href="/tentang"
             className="py-2 text-lg text-blue-600 hover:text-yellow-400"
           >
             Tentang
           </Link>
           <Link
-            href="/services"
+            href="/pelatihan"
             className="py-2 text-lg text-blue-600 hover:text-yellow-400"
           >
             Pelatihan
           </Link>
           <Link
-            href="/contact"
+            href="/kontak"
             className="py-2 text-lg text-blue-600 hover:text-yellow-400"
           >
             Kontak
