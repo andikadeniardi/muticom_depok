@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Navbar from "../../components/molecules/Navbar";
-import Footer from "../../components/molecules/Footer";
-import PaketCard from "../../components/molecules/PaketCard";
+import Navbar from "../../../components/molecules/Navbar";
+import PaketCard from "../../../components/molecules/PaketCard";
+import Footer from "../../../components/molecules/Footer";
 
 const Home = () => {
   return (
